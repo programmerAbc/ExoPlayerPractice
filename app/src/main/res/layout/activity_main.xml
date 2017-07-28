@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.practice.exoplayer.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/simpleExoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:surface_type="texture_view" />
+
+        <Button
+            android:id="@+id/openBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:text="Open" />
+
+        <Button
+            android:id="@+id/scanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:text="Scan" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSpeed0_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speed 20%" />
+
+            <Button
+                android:id="@+id/btnSpeed0_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speed 40%" />
+
+            <Button
+                android:id="@+id/btnSpeed0_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speed 60%" />
+
+            <Button
+                android:id="@+id/btnSpeed0_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speed 80%" />
+            <Button
+                android:id="@+id/btnSpeed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speed 100%" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/sampleVideo1Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sampleVideo1" />
+
+            <Button
+                android:id="@+id/sampleVideo2Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sampleVideo2Btn" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mirrorBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="mirror" />
+    </FrameLayout>
+</LinearLayout>
